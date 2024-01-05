@@ -1,74 +1,98 @@
-h1 {
-    color: #FFF;
-    text-align: center;
-    font-family: Source Sans Pro;
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 100%;
-    padding: 30px;
+/*tags*/
+/*sections*/
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 header {
-    color: #FFF;
-    text-align: center;
-    background-color: #000;
-    font-size: 30px;
-}
-
-
-.nav_bar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-}
-
-li {
-    float: right;
-}
-
-li a {
-    display: block;
-    color: #FFF;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: medium;
-}
-
-li a:hover:not(.active) {
-    background-color: #111;
-}
-
-.active {
-    background-color: #04AA6D;
-}
-
-.logo {
-    float: left;
-    font-size: 30px;
-    padding: 0px 16px;
-}
-
-img {
-    max-width: 100%;
     height: auto;
-    border-radius: 5px;
-    border: 2px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+}
+
+article {
+    flex: 2;
+    overflow-y: auto;
+}
+
+aside {
+    flex: 1;
+    overflow-y: auto;
+    background-color: bisque;
 }
 
 footer {
-    text-align: center;
     background-color: black;
-    color: aliceblue;
+    color: white;
 }
 
-
-.twitter-tweet {
+/*elements within sections*/
+h2 {    
     text-align: center;
+    text-decoration: underline;
 }
+
+    footer a {
+    color: white;
+    text-decoration: dotted;
+}
+
+header ul {
+    margin: 0;
+    padding: 6px;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li a {
+    padding: 8px;
+    color: aliceblue;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+/*Table*/
+table {
+    width: 100%;
+    border-collapse:collapse;
+}
+
+tr {
+    border-bottom: 1px solid #ddd;
+}
+
+td {
+    padding: 5px;
+}
+
+th {
+    text-align: left;
+    background-color: bisque;
+    color: #000;
+    padding: 5px;
+    font-weight: bold;
+}
+
+/*Classes*/
+/*from the header design*/
+ul .active {
+    background-color: #04AA6D;
+}
+
+.inline-color {
+    color: #04AA6D;
+}
+/*Pseudo Classes*/
+/*From the table css*/
+tr:nth-child(odd) {
+    background-color: #555;
+    color: #FFF;
+}
+
+/*IDs*/
