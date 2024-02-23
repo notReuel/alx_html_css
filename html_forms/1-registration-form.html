@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form method="post">
+        <p>
+            <label for="name">
+                <span>Name: </span>
+                <strong>*</strong>
+            </label>
+            <input type="text" name="user_name" id="name" placeholder="Enter your Name" required>
+        </p>
+
+        <p>
+            <label for="mail">
+                <span>Email: </span>
+                <strong>*</strong>
+            </label>
+            <input type="text" name="user_mail" id="mail" placeholder="Enter your Email" required>
+        </p>
+
+        <p>
+            <label for="pwd">
+                <span>Password: </span>
+                <strong>*</strong>
+            </label>
+            <input type="password" name="user_pwd" id="pwd" placeholder="Enter your Password" required>
+        </p>
+
+        <p>
+            <label for="confirm_pwd">
+                <span>Confirm Password: </span>
+                <strong>*</strong>
+            </label>
+            <input type="password" name="user_pwd2" id="confirm_pwd" onchange="checkPassword()"  placeholder="Confirm your password" required oninput="confirm(this)">
+        </p>
+        <p id="para"></p>
+
+        <p class="button">
+            <button type="submit">Submit your form</button>
+        </p>
+    </form>
+
+    <script>
+        const para = document.getElementById('para')
+        const pwd = document.querySelector('#pwd');
+        const confirmPwd = document.querySelector('#confirm_pwd').value
+
+        function checkPassword(){
+            para.textContent = "Password not the same"
+        }
+    </script>
+</body>
+</html>

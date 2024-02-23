@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="post">
+        <p>
+            <label for="name">
+                <span>Name: </span>
+                <strong>*</strong>
+            </label>
+            <input type="text" name="user_name" id="name" required>
+        </p>
+
+        <p>
+            <label for="mail">
+                <span>Email: </span>
+                <strong>*</strong>
+            </label>
+            <input type="email" name="user_mail" id="mail" required>
+        </p>
+
+        <fieldset>
+            <legend>Rate your experience</legend>
+
+            <ul>
+                <li>
+                    <label for="excellent">Excellent</label>
+                    <input type="checkbox" name="feedbk" id="excellent" value="excellent" required checked>
+                </li>
+
+                <li>
+                    <label for="good">Good</label>
+                    <input type="checkbox" name="feedbk" id="good" value="good">
+                </li>
+
+                <li>
+                    <label for="average">Average</label>
+                    <input type="checkbox" name="feedbk" id="average">
+                </li>
+
+                <li>
+                    <label for="poor">Poor</label>
+                    <input type="checkbox" name="feedbk" id="poor">
+                </li>
+            </ul>
+        </fieldset>
+
+        <p>
+            <label for="file">
+                <span>Upload file: </span>
+            </label>
+            <input type="file" name="file" id="file">
+        </p>
+
+        <p>
+            <button type="submit">Submit your feedback</button>
+        </p>
+    </form>
+</body>
+</html>

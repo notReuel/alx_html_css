@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form method="post">
+        <p>
+            <label for="name">
+                <span>Name: </span>
+                <strong>*</strong>
+            </label>
+            <input type="text" name="user_name" id="name" required>
+        </p>
+
+        <p>
+            <label for="mail">
+                <span>Email: </span>
+                <strong>*</strong>
+            </label>
+            <input type="email" name="user_mail" id="mail" required>
+        </p>
+
+        <!-- Drop down menu to select favorite color -->
+        <p>
+            <label for="colour">
+                <span>Favourite colour: </span>
+            </label>
+            <select name="colours" id="colour" required>
+                <option value="">select</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="time">
+                <span>Time: </span>
+                <strong>*</strong>
+            </label>
+            <input type="time" name="time" id="time" required>
+        </p>
+
+        <p>
+            <label for="date">
+                <span>Date: </span>
+                <strong>*</strong>
+            </label>
+            <input type="date" name="date" id="date" required>
+        </p>
+
+        
+        <button type="submit">Submit your form</button>
+    </form>
+</body>
+</html>

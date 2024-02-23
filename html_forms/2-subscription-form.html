@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form method="post">
+        <p>
+            <label for="name">
+                <span>Name: </span>
+                <strong>*</strong>
+            </label>
+            <input type="text" name="user_name" id="name" placeholder="Enter your name" required>
+        </p>
+
+        <p>
+            <label for="mail">
+                <span>Email address</span>
+                <strong>*</strong>
+            </label>
+            <input type="email" name="user_mail" id="mail" placeholder="Enter your email address" required>
+        </p>
+
+        <fieldset>
+            <legend>Subscription Preference</legend>
+            <p></p>
+
+            <p>
+                <label for="monthly">
+                    <input type="radio" name="sub" id="monthly" value="monthly" required>
+                    <span>Monthly</span>
+                </label>
+            </p>
+
+            <p>
+                <label for="yearly">
+                    <input type="radio" name="sub" id="yearly" value="yearly">
+                    <span>Yearly</span>
+                </label>
+            </p>
+        </fieldset>
+
+        <p>
+            <button type="submit">Submit your form </button>
+        </p>
+    </form>
+</body>
+</html>
