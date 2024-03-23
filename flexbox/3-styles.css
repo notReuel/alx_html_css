@@ -385,9 +385,9 @@
     display: flex;
     flex-direction : row-reverse;
   }
-  
+
   /* Section SERVICES ============================= */
-  .section-body .row {
+  .section-services .row {
     display: flex;
     flex-wrap: wrap;
   }
