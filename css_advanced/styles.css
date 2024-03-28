@@ -1,0 +1,582 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* ---- CSS RESET SECTION ---- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* global */
+:root{
+    --color-white: #ffff;
+    --color-purple: #C271FF;
+    --color-blue: #071629;
+    --font-family-base: 'Source Sans Pro', Arial, sans-serif;
+}
+#headerBackground
+{    
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 1093px;
+  z-index: -1;
+  background-image: url('./assets/Object.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
+  
+}
+.small-font{
+    color: var(--color-white);
+    font-family: var(--font-family-base);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+}
+.small-font a{
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.row-align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+} 
+.register{
+    border: none;
+    background-color: var(--color-purple);
+    width: 162px;
+    height: 44px;
+    border-radius: 22px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.register:hover{
+    background-color: var(--color-white);
+    color: var(--color-blue);
+    cursor: pointer;
+}
+
+/* nav */
+.logo{
+    height: 29px ;
+    width: 167px ;
+}
+.nav{
+	display: flex;
+	justify-content: space-between;
+	align-items:  center;
+	padding: 27px 10% 0 10%; 
+}
+
+.nav-items{
+    display: flex;
+    flex-direction: row;
+    gap: 52px;
+}
+
+.nav-items a:hover{
+    color: var(--color-purple);
+}
+/* get schooled */
+.Get-schooled{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 1000px;
+} 
+
+.Get-schooled-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 38px;
+}
+
+.Get-schooled-head h1{
+    color: var(--color-white);
+    text-align: center;
+    font-family: Source Sans Pro;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.Get-schooled-head p{
+    color: var(--color-white);
+    text-align: center;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    word-spacing: 59px;
+}
+
+.learn h2{
+    color:  var(--color-white);
+    font-family: var(--font-family-base);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-align: center;
+    padding-bottom: 87px;
+}
+.learn span{
+    color:  var(--color-purple);
+    font-weight: 700;
+}
+.format{
+    gap: 130px;
+}
+.pros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.pros img{
+    
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+
+}
+
+.pros h3{
+    color: var(--color-white);
+    text-align: center;
+    font-family: var(--font-family-base);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 27px; 
+}
+.pros p{
+    color: var(--color-white);
+    text-align: center;
+    font-family: var(--font-family-base);
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px; 
+    width: 150px;
+
+}
+
+/* qoute */
+.qoute{
+    background-color: var(--color-purple);
+    height: 392px;
+    display: flex;
+    justify-content: center;
+}
+.qoute-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 58px;
+}
+.qoute-col q{
+    display: block;
+    width: 730px;
+    color:var(--color-white);
+    font-family: var(--font-family-base);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33.6px; 
+}
+.qoute-col p{
+    color:var(--color-white);
+    font-family: var(--font-family-base);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 33.6px;
+}
+#italc{
+    color:var(--color-white);
+    font-family: var(--font-family-base);
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 33.6px;
+}
+.qoute div img{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+/* VIDEO */
+.video{
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 624px;
+    gap: 75px;
+}
+.video h1{
+    color: var(--color-blue);
+    text-align: center;
+    font-family: var(--font-family-base);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.video span{
+    color: var(--color-purple);
+    font-family: var(--font-family-base);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    height: 40px;
+}
+.video-items{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 255px;
+}
+.video-items img{
+    width: 255px;
+    height: 154px;
+}
+.video-items h2{
+    color: var(--color-blue);
+    font-family: var(--font-family-base);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.video-items p{
+    width: 242px;
+    color: rgba(7, 22, 41, 0.50);
+    font-family:var(--font-family-base);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+}
+.video-items h3{
+    color: var(--color-purple);
+    font-family: var(--font-family-base);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27px; 
+}
+.space{
+    gap: 30px;
+
+}
+.stars{
+    display: inline-flex;
+}
+.stars img{
+    width: 15px;
+    height: 15px;
+}
+.rating p{
+    color: var(--color-purple);
+    text-align: right;
+    font-family: Source Sans Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27px;
+    float: right;
+}
+/* Free membership */
+.membership{
+    background-color: var(--color-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 502px;
+}
+.membership h2{
+    color: var(--color-white);
+    font-family: var(--font-family-base);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.membership span{
+    color: var(--color-purple);
+    font-family: var(--font-family-base);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.members{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 257px;
+    height: 153px; 
+}
+
+.members h3{
+    color: var(--color-white);
+    text-align: center;
+    font-family: var(--font-family-base);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px; 
+}
+
+.members p{
+    color: var(--color-white);
+    text-align: center;
+    font-family: var(--font-family-base);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    width: 212px; 
+}
+.members img{
+    width: 44px;
+    height: 36px;
+}
+
+/* F.A.Q */
+.faq{
+    background-color: var(--color-white);
+    height: auto;
+}
+.faq h1{
+    color: var(--color-blue);
+    text-align: center;
+    font-family: var(--font-family-base);
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding-top: 2%;
+}
+.faqspace{
+    gap: 220px;
+    padding :74px 0 74px 0  ;
+}
+
+
+.question p{
+    width: 350px;
+    color: rgba(7, 22, 41, 0.50);
+    font-family: var(--font-family-base);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+/* Footer */
+footer{
+    background-color: var(--color-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 249px;
+    width: 100dvw;
+   
+}
+footer p{
+    opacity: 0.3517;
+    color: var(--color-white);
+    font-family: var(--font-family-base);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    padding-top: 75px ;
+}
+.row-footer{
+    width: 100dvw;
+
+}
+.row-footer div{
+    float: right;
+    padding-right:10%;
+}
+.row-footer .logo{
+    float: left;
+    padding-left:10%;
+}
+@media screen and (max-width: 770px) {
+    #headerBackground{
+        background-position: left;
+
+    }
+    .Get-schooled-head{
+        gap: 28px;
+    }
+    
+    .Get-schooled-head h1{
+        font-size: 90px;
+    }
+    .format{
+        gap: 65px;
+    }
+    .pros img{
+        
+        width: 113px;
+        height: 113px;
+    }
+    .qoute-row{
+        gap: 44px;
+    }
+    .qoute-col q{
+        width: 547px;
+    }
+    .qoute div img{
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+    }
+    .video{
+        height: 834px;
+    }
+    
+}
+@media screen and (max-width: 480px) {
+    #headerBackground{
+        background-position: left;
+
+    }
+    .Get-schooled-head{
+        gap: 19px;
+    }
+    
+    .Get-schooled-head h1{
+        font-size: 60px;
+    }
+    .learn h2{
+        padding-bottom: 43px;
+    }
+    .format{
+        gap: 65px;
+    }
+    .pros img{
+        
+        width: 75px;
+        height: 75px;
+    }
+    .qoute-row{
+        gap: 29px;
+        align-items: center;
+        justify-content: center;
+    }
+    .qoute-col q{
+        width: 365px;
+    }
+    .video{
+        height: 1200px;
+    }
+    .video-items{
+        width: 200px;
+    }
+    .video-items img{
+        width: 113px;
+        height: 77px;
+    }
+    .video-items h2{
+        font-size: 14px;
+    }
+    .video-items p{
+        width: 121px; 
+    }
+    .video-items h3{
+        font-size: 7px;
+    }
+    .space{
+        gap: 30px;
+    
+    }
+    .stars img{
+        width: 7px;
+        height: 7px;
+    }
+    .rating p{
+        font-size: 7px;
+
+    }
+    .membership{
+        height: 1004px;
+    }
+    .members img{
+        width: 33px;
+        height: 27px;
+    }
+    
+    .members p{
+        font-size: 10px;
+        width: 106px; 
+    }
+}
