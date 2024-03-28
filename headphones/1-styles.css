@@ -1,0 +1,285 @@
+:root {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+    font-family: Source Sans Pro Regular;
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+a:active, a:hover, .btn:hover, .btn:hover {
+    color: #FF6565;
+    opacity: 0.9;
+}
+
+/* FONTS ======================= */
+@font-face {
+    font-family: 'Source Sans Pro Bold';
+    src: url('Downloads/SourceSansPro-Bold.eot');
+    src: url('Downloads/SourceSansPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Downloads/SourceSansPro-Bold.woff2') format('woff2'),
+        url('Downloads/SourceSansPro-Bold.woff') format('woff'),
+        url('Downloads/SourceSansPro-Bold.ttf') format('truetype'),
+        url('Downloads/SourceSansPro-Bold.svg#SourceSansPro-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro Regular';
+    src: url('Downloads/SourceSansPro-Regular.eot');
+    src: url('Downloads/SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Downloads/SourceSansPro-Regular.woff2') format('woff2'),
+        url('Downloads/SourceSansPro-Regular.woff') format('woff'),
+        url('Downloads/SourceSansPro-Regular.ttf') format('truetype'),
+        url('Downloads/SourceSansPro-Regular.svg#SourceSansPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spin Cycle 3D OT';
+    src: url('Downloads/SpinCycle3DOT.eot');
+    src: url('Downloads/SpinCycle3DOT.eot?#iefix') format('embedded-opentype'),
+        url('Downloads/SpinCycle3DOT.woff2') format('woff2'),
+        url('Downloads/SpinCycle3DOT.woff') format('woff'),
+        url('Downloads/SpinCycle3DOT.ttf') format('truetype'),
+        url('Downloads/SpinCycle3DOT.svg#SpinCycle3DOT') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spin Cycle OT';
+    src: url('Downloads/SpinCycleOT.eot');
+    src: url('Downloads/SpinCycleOT.eot?#iefix') format('embedded-opentype'),
+        url('Downloads/SpinCycleOT.woff2') format('woff2'),
+        url('Downloads/SpinCycleOT.woff') format('woff'),
+        url('Downloads/SpinCycleOT.ttf') format('truetype'),
+        url('Downloads/SpinCycleOT.svg#SpinCycleOT') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+/* 1. HEADER */
+/* Section Header ============================= */
+.header h1, h2, p {
+    color: #FFFFFF;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: Source Sans Pro Bold;
+}
+
+h2 {
+    font-size: 1.7rem;
+    font-family: Source Sans Pro Bold;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(images/headphones_hero_1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 1000px;  
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 1000px; */
+    height: 100%;
+    justify-content: space-between;
+    margin: 1.5rem;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 5rem;
+    align-items: center;
+    align-content: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* background-color: red; */
+}
+
+/* header logo ====== */
+.logo-img {
+    width: 20rem;
+}
+
+
+/* Navbar =========*/
+
+nav ul {
+    float: right ;
+    margin-right: 2rem;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+nav ul li a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    /* font-weight: 500; */
+    padding: 0.7rem 1.3rem;
+}
+
+.checkbtn {
+    font-size: 3rem;
+    color: #FFFFFF; 
+    float: left;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.navbar a {
+    /* font-size: 1.5rem; */
+    /* text-decoration: none; */
+    /* margin: 0 1rem; */
+    /* margin-left: 2.5rem; */
+    font-weight: 500;
+}
+
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.list-item {
+    font-size: 1.5rem;
+    list-style-type: none;
+    margin: 0 1rem;
+}
+
+/* Header Text =================== */
+
+.header-text p {
+    text-align: center;
+}
+
+.btn {
+    background-color: #FF6565;
+    color: #FFFFFF;
+    border-radius: 2.5rem;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+
+/* RESPONSIVENESS */
+/* Responsiveness */
+@media (max-width: 768px) {
+    .logo-img {
+        width: 16rem;
+        padding-left: 5rem;
+    }
+
+    nav ul li a {
+        font-size: 1.4rem;
+    }
+}
+@media (max-width: 480px) {
+    .checkbtn
+     {
+        display: block;
+     }
+
+     ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: red;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+     }
+
+     #check:checked ~ {
+        left: 0;
+     }
+ 
+     nav ul li {
+        display: block;
+        margin: 50px;
+        line-height: 30px;
+     }
+     
+     nav ul li a {
+        font-size: 2rem;
+     }
+    /* .container {
+        padding: 1.3rem 5%;
+    }
+    .icon {
+        display: inline-flex;
+        cursor: pointer; */
+        /* position: absolute; */
+    /* }
+
+    .navbar {
+        position: absolute;
+        top: 10%;
+        left: 0;
+        width: 100%;
+        height: 17.7rem;
+        background-color: red;
+    }
+
+    .navbar > a {
+        display: block;
+        width: 100%;
+    } */
+    
+ 
+}

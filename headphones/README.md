@@ -1,0 +1,1 @@
+This project is the implementation of a figma high fidelty website design for a 
